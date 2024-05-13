@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int i, j;
-    for (i = 1; i <= 5; i++) {
-        for (j = 1; j <= i; j++) {
-            printf("%d ", 40 + j);
+    int a= 2; 
+    int b = 0; 
+    do {
+        if (a % 2 == 0 && b < 8) {
+            printf("%d ", a);
+            b++;     
+        } else if (b == 8) {
+        b= 0;    
         }
-        printf("\n");
-    }
+        a += 8; 
+    } while (a <= 50);
+
     return 0;
 }
 
